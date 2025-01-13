@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página dedicada a la venta de Legos con accesibilidad web">
+    <title>Venta de Legos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #f44336;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        main {
+            padding: 1rem;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 0.8rem;
+            text-align: left;
+        }
+
+        th {
+            background: #f44336;
+            color: white;
+        }
+
+        .product-image {
+            width: 120px;
+            height: auto;
+        }
+
+        .accessible-video {
+            position: relative;
+            max-width: 100%;
+        }
+
+        .accessible-video video {
+            width: 100%;
+            height: auto;
+        }
+
+        .accessible-video .captions {
+            position: absolute;
+            bottom: 10%;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            font-size: 1rem;
+            padding: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Venta de Legos Exclusivos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Sobre Nosotros</h2>
+            <p>¡Bienvenidos a nuestra tienda de Legos! Somos un equipo apasionado por los bloques de construcción y ofrecemos una amplia variedad de sets para todas las edades. Desde coleccionistas hasta pequeños constructores, tenemos algo para todos.</p>
+            <img src="img/imagen1.jpg" alt="Set de Legos multicolor sobre una mesa" />
+        </section>
+
+        <section>
+            <h2>Productos Destacados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Imagen</th>
+                        <th>Producto</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/imagen2.jpg" alt="Set de Lego Star Wars" class="product-image"></td>
+                        <td>Lego Star Wars</td>
+                        <td>Construye naves icónicas de la saga Star Wars.</td>
+                        <td>$120.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/imagen3.jpg" alt="Set de Lego City" class="product-image"></td>
+                        <td>Lego City</td>
+                        <td>Crea una ciudad vibrante con vehículos y edificios detallados.</td>
+                        <td>$80.00</td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/imagen4.png" alt="Set de Lego Castillo Medieval" class="product-image"></td>
+                        <td>Lego Castillo Medieval</td>
+                        <td>Revive la época medieval con este detallado castillo.</td>
+                        <td>$150.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Video Promocional</h2>
+            <div class="accessible-video">
+                <video controls>
+                    <source src="video/VideoPromocion.mp4" type="video/mp4">
+                    <track src="subtitulos.vtt" kind="subtitles" srclang="es" label="Español" default>
+                    Su navegador no soporta el elemento de video.
+                </video>
+                <div class="captions">
+                    Este video promocional describe cómo obtener cupones de descuento para Legos.
+                </div>
+            </div>
+        </section>        
+    </main>
+</body>
+</html>
